@@ -20,6 +20,23 @@
                 text-decoration: underline;
             }
 
+            .remark-slide-content {
+                position: relative;
+            }
+
+            .contain {
+                position: absolute;
+                top: 1em;
+                bottom: 1em;
+                left: 4em;
+                right: 4em;
+            }
+
+            video {
+                height: 100%;
+                width: auto;
+            }
+
             h1, h2, h3 {
                 font-weight: 500;
             }
@@ -68,9 +85,13 @@
 
             ---
 
-            <video width="225" height="400" controls>
-                <source src="assets/androiddemo.mp4" type="video/mp4">
-            </video>
+            class: center
+
+            <div class="contain">
+                <video controls>
+                    <source src="assets/androiddemo.mp4" type="video/mp4">
+                </video>
+            </div>
 
             ---
 
