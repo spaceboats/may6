@@ -36,6 +36,11 @@
                 top: 8em;
             }
 
+            img {
+                width: 100%;
+                height: auto;
+            }
+
             video {
                 height: 100%;
                 width: auto;
@@ -86,6 +91,28 @@
             ---
 
             # Web App
+            1. Get static Lawrence data
+            2. Allow users to filter on live and static data
+
+            ---
+
+            class: center
+
+            `$.get("http://magic-server.spaceboats.net/arrivals", { start_time: st, end_time: et }, function(data);`
+
+            <img src="assets/data_stream.png">
+
+            ---
+
+            class: center
+
+            <img src="assets/search1.png">
+
+            ---
+
+            class: center
+
+            <img src="assets/search2.png">
 
             ---
 
