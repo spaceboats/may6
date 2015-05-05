@@ -85,6 +85,8 @@
 
             ---
 
+            name: asciicast
+
             # busbus core
 
             <div class="contain title center">
@@ -151,6 +153,15 @@
         </script>
         <script>
             var slideshow = remark.create();
+            slideshow.on('beforeShowSlide', function (slide) {
+                if (slide.properties.name == 'asciicast') {
+                    var ascii = document.getElementById('asciicast-iframe-19564');
+                    if (!ascii.hasAttribute('data-spaceboats-refreshed')) {
+                        ascii.src += '';
+                        ascii.setAttribute('data-spaceboats-refreshed', '');
+                    }
+                }
+            });
         </script>
     </body>
 </html>
