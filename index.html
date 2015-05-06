@@ -122,7 +122,11 @@
 
             # Web App
 
-            `$.get("http://magic-server.spaceboats.net/arrivals", { start_time: st, end_time: et }, function(data);`
+            ```
+            $.get("/arrivals",
+                  { /* route, stop, other args */ },
+                  function(data) { /* do stuff */ });
+            ```
 
             <img src="assets/data_stream.png">
 
