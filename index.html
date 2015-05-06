@@ -38,6 +38,10 @@
                 font-size: 200%;
             }
 
+            .remark-code {
+                font-size: 100%;
+            }
+
             .contain {
                 position: absolute;
                 top: 1em;
@@ -166,9 +170,9 @@
             # LED Board API
 
             ```
-            "http://3001-ledboard.spaceboats.net/insert \
+            POST http://3001-ledboard.spaceboats.net/insert
                 {type: "text", namespace: "EECS 581",
-                text: "Senior Design", color: "#ffffff"}
+                 text: "Senior Design", color: "#ffffff"}
             ```
 
             ---
