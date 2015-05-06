@@ -22,10 +22,24 @@
 
             .remark-slide-content {
                 position: relative;
+                font-size: 24px;
+            }
+
+            .remark-slide-content h1 {
+                font-size: 64px;
+                margin: .5em 0;
+            }
+
+            .remark-slide-content p, .remark-slide-content li {
+                font-size: 125%;
             }
 
             .remark-slide-content.large > p {
                 font-size: 200%;
+            }
+
+            .remark-code {
+                font-size: 100%;
             }
 
             .contain {
@@ -82,7 +96,8 @@
             # busbus
 
             <!-- note the two trailing spaces in this line create a line break. markdown is terrible -->
-            Alex Gustafson, Ian Weller, Monica Shafii, Nick Gilliland, Zane Ralston  
+            Alex Gustafson, Ian Weller,  
+            Monica Shafii, Nick Gilliland, Zane Ralston  
             spaceboats GmbH &mdash; [spaceboats.github.io](https://spaceboats.github.io/)
 
             ---
@@ -107,7 +122,11 @@
 
             # Web App
 
-            `$.get("http://magic-server.spaceboats.net/arrivals", { start_time: st, end_time: et }, function(data);`
+            ```
+            $.get("/arrivals",
+                  { /* route, stop, other args */ },
+                  function(data) { /* do stuff */ });
+            ```
 
             <img src="assets/data_stream.png">
 
@@ -154,11 +173,17 @@
             3. Web API
             4. Web App
 
-            <img src="assets/ledboard.jpg" style="width:400px;height:200px">
+            <img src="assets/ledboard.jpg" style="width:700px;height:170px">
 
             ---
 
             # LED Board API
+
+            ```
+            POST http://3001-ledboard.spaceboats.net/insert
+                {type: "text", namespace: "EECS 581",
+                 text: "Senior Design", color: "#ffffff"}
+            ```
 
             ---
 
